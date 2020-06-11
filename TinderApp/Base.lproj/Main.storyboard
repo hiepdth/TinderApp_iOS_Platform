@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Login" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginController" customModule="TinderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jgL-fN-lKp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="gne-Ge-RpY">
+                                <rect key="frame" x="30" y="221.5" width="354" height="453"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wsu-3U-rC3">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="181"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_pink_512" translatesAutoresizingMaskIntoConstraints="NO" id="ESa-xP-fvc">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="E54-QJ-Pgd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By tapping Log In, you agree our Terms of Service and Privacy Policy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPL-2z-3eN">
+                                                <rect key="frame" x="0.0" y="140" width="354" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-td-9f3">
+                                        <rect key="frame" x="0.0" y="331" width="354" height="122"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="723-lK-qx9">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="46"/>
+                                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                                <state key="normal" title="LOGIN WITH FACEBOOK">
+                                                    <color key="titleColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-Q1-OoD">
+                                                <rect key="frame" x="0.0" y="76" width="354" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                                <state key="normal" title="LOGIN WITH PHONE NUMBER">
+                                                    <color key="titleColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="loginWithPhone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbz-QZ-N5m"/>
+                                                    <segue destination="VM3-lF-N7i" kind="show" id="KYU-Iz-Yf1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gne-Ge-RpY" firstAttribute="centerX" secondItem="tOF-Sa-rfz" secondAttribute="centerX" id="F4R-e4-cue"/>
+                            <constraint firstItem="jgL-fN-lKp" firstAttribute="top" secondItem="tOF-Sa-rfz" secondAttribute="top" id="GOi-VP-0Jd"/>
+                            <constraint firstItem="tOF-Sa-rfz" firstAttribute="bottom" secondItem="jgL-fN-lKp" secondAttribute="bottom" id="TXr-sI-1PB"/>
+                            <constraint firstItem="tOF-Sa-rfz" firstAttribute="trailing" secondItem="jgL-fN-lKp" secondAttribute="trailing" id="cw7-60-WQv"/>
+                            <constraint firstItem="jgL-fN-lKp" firstAttribute="leading" secondItem="tOF-Sa-rfz" secondAttribute="leading" id="jaz-4r-eDs"/>
+                            <constraint firstItem="gne-Ge-RpY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mcb-Hj-XiT"/>
+                            <constraint firstItem="tOF-Sa-rfz" firstAttribute="trailing" secondItem="gne-Ge-RpY" secondAttribute="trailing" constant="30" id="mw9-E1-P1g"/>
+                            <constraint firstItem="tOF-Sa-rfz" firstAttribute="trailing" secondItem="gne-Ge-RpY" secondAttribute="trailing" constant="30" id="sfS-xK-KsD"/>
+                            <constraint firstItem="gne-Ge-RpY" firstAttribute="leading" secondItem="tOF-Sa-rfz" secondAttribute="leading" constant="30" id="wsd-ps-5Mr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tOF-Sa-rfz"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnFace" destination="723-lK-qx9" id="nr8-RM-vGh"/>
+                        <outlet property="btnPhone" destination="8ks-Q1-OoD" id="8yK-0c-b5q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139"/>
+        </scene>
+        <!--Phone Login-->
+        <scene sceneID="lIa-ng-jp8">
+            <objects>
+                <viewController title="Phone Login" modalPresentationStyle="fullScreen" id="VM3-lF-N7i" customClass="PhoneNumberController" customModule="TinderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SNA-oN-nYp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-He-41x">
+                                <rect key="frame" x="30" y="764" width="354" height="48"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="waitAndVerifyCode:" destination="VM3-lF-N7i" eventType="touchUpInside" id="vRZ-cd-iaR"/>
+                                    <segue destination="u94-gu-2rZ" kind="show" identifier="phone_number" id="7xR-ls-T3k"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="HA1-va-QoJ">
+                                <rect key="frame" x="30" y="329" width="354" height="238"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My phone number is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IQ-qy-Svm">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zwI-e8-ghr">
+                                        <rect key="frame" x="0.0" y="80" width="354" height="26.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VN +84" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrX-QL-NdQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QIz-lq-X1j">
+                                                <rect key="frame" x="89.5" y="0.0" width="264.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PK4-tg-Jpp">
+                                        <rect key="frame" x="0.0" y="156.5" width="354" height="81.5"/>
+                                        <string key="text">When you tap Continue, Neyer will send a text with verification code. Message and data rates may apply. The verified phone number can be used to login.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcW-Rg-f6x">
+                                <rect key="frame" x="20" y="64" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bTY-Ip-RB5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HA1-va-QoJ" firstAttribute="centerX" secondItem="rjS-rk-Wyn" secondAttribute="centerX" id="EqD-aH-3Xf"/>
+                            <constraint firstItem="HA1-va-QoJ" firstAttribute="leading" secondItem="rjS-rk-Wyn" secondAttribute="leading" constant="30" id="Gm3-Pl-jyp"/>
+                            <constraint firstItem="rjS-rk-Wyn" firstAttribute="bottom" secondItem="SPZ-He-41x" secondAttribute="bottom" constant="50" id="VIT-HL-GBv"/>
+                            <constraint firstItem="XcW-Rg-f6x" firstAttribute="top" secondItem="rjS-rk-Wyn" secondAttribute="top" constant="20" id="Yns-Gf-WZN"/>
+                            <constraint firstItem="rjS-rk-Wyn" firstAttribute="trailing" secondItem="SPZ-He-41x" secondAttribute="trailing" constant="30" id="mEe-Rf-XiQ"/>
+                            <constraint firstItem="rjS-rk-Wyn" firstAttribute="trailing" secondItem="HA1-va-QoJ" secondAttribute="trailing" constant="30" id="p1C-CQ-XB9"/>
+                            <constraint firstItem="SPZ-He-41x" firstAttribute="leading" secondItem="rjS-rk-Wyn" secondAttribute="leading" constant="30" id="qn3-3z-GzE"/>
+                            <constraint firstItem="XcW-Rg-f6x" firstAttribute="leading" secondItem="rjS-rk-Wyn" secondAttribute="leading" constant="20" id="wJm-Wn-G17"/>
+                            <constraint firstItem="HA1-va-QoJ" firstAttribute="centerY" secondItem="SNA-oN-nYp" secondAttribute="centerY" id="yhg-jV-MXc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rjS-rk-Wyn"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EqD-aH-3Xf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btnCon" destination="SPZ-He-41x" id="J93-be-y6G"/>
+                        <outlet property="tfPhone" destination="QIz-lq-X1j" id="EhW-CL-S0A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4TX-J5-GOn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="139"/>
+        </scene>
+        <!--Phone Verification-->
+        <scene sceneID="Ksk-Bb-XvO">
+            <objects>
+                <viewController title="Phone Verification" modalPresentationStyle="fullScreen" id="u94-gu-2rZ" customClass="VerifyPhoneController" customModule="TinderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cln-Kw-QQY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mil-09-zC8">
+                                <rect key="frame" x="30" y="764" width="354" height="48"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.9999235272" green="1" blue="0.99988299609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verifyPhoneNumber:" destination="u94-gu-2rZ" eventType="touchUpInside" id="haL-4b-eSp"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pb2-AE-ehi">
+                                <rect key="frame" x="30" y="351" width="354" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My code is" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-pK-jck">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Eh8-za-P1Q">
+                                        <rect key="frame" x="0.0" y="80" width="354" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+84945455387" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-wh-4Dk">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nay-Ra-yT8">
+                                                <rect key="frame" x="177" y="0.0" width="177" height="30"/>
+                                                <state key="normal" title="RESEND">
+                                                    <color key="titleColor" red="1" green="0.065431795060000006" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resendVerificationCode:" destination="u94-gu-2rZ" eventType="touchUpInside" id="IGn-2J-5e9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oS1-0e-bBH">
+                                        <rect key="frame" x="0.0" y="160" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTi-4F-brE">
+                                <rect key="frame" x="20" y="64" width="50" height="50"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <segue destination="VM3-lF-N7i" kind="show" id="6zf-sc-Q9g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pb2-AE-ehi" firstAttribute="leading" secondItem="Cln-Kw-QQY" secondAttribute="leading" constant="30" id="4G4-8c-fgX"/>
+                            <constraint firstItem="kqG-IB-Q7L" firstAttribute="trailing" secondItem="Mil-09-zC8" secondAttribute="trailing" constant="30" id="6NL-A8-vxj"/>
+                            <constraint firstItem="kqG-IB-Q7L" firstAttribute="bottom" secondItem="Mil-09-zC8" secondAttribute="bottom" constant="50" id="7Ow-To-BIb"/>
+                            <constraint firstAttribute="trailing" secondItem="pb2-AE-ehi" secondAttribute="trailing" constant="30" id="GDe-3X-HwL"/>
+                            <constraint firstItem="dTi-4F-brE" firstAttribute="leading" secondItem="kqG-IB-Q7L" secondAttribute="leading" constant="20" id="HOu-et-pU7"/>
+                            <constraint firstItem="Mil-09-zC8" firstAttribute="leading" secondItem="kqG-IB-Q7L" secondAttribute="leading" constant="30" id="JS7-fT-Lkv"/>
+                            <constraint firstItem="dTi-4F-brE" firstAttribute="top" secondItem="kqG-IB-Q7L" secondAttribute="top" constant="20" id="MFz-O9-M1o"/>
+                            <constraint firstItem="pb2-AE-ehi" firstAttribute="centerY" secondItem="Cln-Kw-QQY" secondAttribute="centerY" id="pto-Mw-DRA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kqG-IB-Q7L"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FKh-nK-tgH">
+                        <barButtonItem key="backBarButtonItem" title=" " id="lxG-uG-9K8"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnCon" destination="Mil-09-zC8" id="Ob5-Jl-RZs"/>
+                        <outlet property="btnResend" destination="Nay-Ra-yT8" id="xWx-wt-P2d"/>
+                        <outlet property="lbPhone" destination="kaN-wh-4Dk" id="b95-Ar-xVD"/>
+                        <outlet property="tfPin" destination="oS1-0e-bBH" id="uCT-W6-c4M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahA-Lg-AJf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KYU-Iz-Yf1"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="avatar_pink_512" width="512" height="512"/>
+        <image name="back" width="50" height="50"/>
+        <image name="background" width="1000" height="667"/>
+    </resources>
+</document>
